@@ -3,7 +3,7 @@ How to setup, run and analyze molecular dynamics of proteins with a ligand.
 
 ![GitHub all releases](https://img.shields.io/github/downloads/leninkelvin/AMBER-ligand/total?style=for-the-badge&logo=appveyor)
 ![GitHub forks](https://img.shields.io/github/forks/leninkelvin/AMBER-ligand?style=for-the-badge&logo=appveyor)
-![GitHub Repo stars](https://img.shields.io/github/stars/leninkelvin/AMBER-ligand?style=for-the-badge&logo=appveyor))
+![GitHub Repo stars](https://img.shields.io/github/stars/leninkelvin/AMBER-ligand?style=for-the-badge&logo=appveyor)
 
 This is a guide to use AMBER MD. It will borrow material from the [Amber Tutorials](http://ambermd.org/tutorials/) tutorials as well as experience and more resources. 
 
