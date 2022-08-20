@@ -155,7 +155,7 @@ While the content of all of the files included is important (read the manual) we
 
 ```
 trajin 5R82_wat_md3.mdcrd # read in the trajectory to analyse
-trajout 5R82.mdcrd netcdf
+trajout MD.mdcrd netcdf 5R82_wat.prmtop nobox
 
 strip :WAT # removing WAT molecules
 strip :Na+ # removing sodium atoms
@@ -249,6 +249,13 @@ These are only a few of the analyses that can be carried out with amber. Hopeful
 # MMGBSA
 
 After all, now we dig into the evaluation of the interaction energies using MMGBSA. Fore details make sure you visit the [tutorial for these calculations](http://ambermd.org/tutorials/advanced/tutorial3/index.php). 
+
+```
+ante-MMPBSA.py -p 5R82_wat.prmtop -c complex.prmtop -r receptor.prmtop -l ligand.prmtop -s :WAT:Na+:Cl- -m :1-304 --radii=mbondi3
+```
+It is crucial that the values in -m match the numbering of your receptor. Otherwise the next step will fail. 
+
+
 
 # Créditos
 
